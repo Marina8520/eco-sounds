@@ -5,6 +5,8 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 body {
     background-color: black;
@@ -64,6 +66,7 @@ cursor: pointer;
     height: calc(100vh - 120px);
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .play {
@@ -74,6 +77,20 @@ cursor: pointer;
     background-color: transparent;
     transition: 0.3s;
     border: 0;
+}
+
+.play-active {
+    width: 160px;
+    height: 160px;
+    background-image: url(./assets/svg/pause.svg);
+    background-size: contain;
+    background-color: transparent;
+    transition: 0.3s;
+    border: 0;
+}
+
+.play:hover {
+    filter: invert(46%) sepia(25%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 .footer-container {
