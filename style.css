@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Roboto;
+     src: url("./assets/fonts/Roboto-Medium.ttf");
+   }
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    font-family: Roboto;
+}
+
+.header-container { 
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo:hover { 
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.logo {
+width: 50px;
+height: 50px;
+background-image: url(./assets/svg/logo1.svg);
+transition: 00.3s;
+cursor: pointer;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    list-style: none;
+}
+
+.bird-name { 
+    margin: 0 15px;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.bird-name.active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.bird-name:hover { 
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}   
+
+.main-container {
+    max-width: 1440px;
+    display: flex;
+    background-image: url(./assets/img/forest.jpg);
+    background-size: cover;
+    min-height: 280px;
+    height: calc(100vh - 120px);
+    justify-content: center;
+    align-items: center;
+}
+
+.play {
+    width: 160px;
+    height: 160px;
+    background-image: url(./assets/svg/play.svg);
+    background-size: contain;
+    background-color: transparent;
+    transition: 0.3s;
+    border: 0;
+}
+
+.footer-container {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 5px 20px;
+}
+.footer-list {
+    display: flex;
+    align-items: center; 
+}
+
+.copyrigth {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: Roboto; 
+    transition: 0.3s;
+    padding: 0 20px;
+}
+.copyrigth:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.year {
+    color: white;
+    cursor: pointer;
+    font-style: Roboto;
+    font-size: 20px;
+    transition: 0.3s;
+    padding: 0 20px;
+}
+
+.year:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.git {
+    color: white;
+    font-style: Roboto;
+    font-size: 20px;
+    transition: 0.3s;
+    padding: 0 20px;
+}
+
+.git:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.rss-logo {
+    width: 135px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./assets/svg/rss.svg);
+}
+.rss-logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.active:hover {
+    filter: invert(0%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%); 
+}
